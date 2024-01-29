@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>APP VIDEOS</title>
+    <link rel="stylesheet" href="css/estiloindex.css">
+    <link rel="stylesheet" href="css/estiloMenu.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #idContenedorIndex {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #idEncabezadoIndex,
+        #idPieIndex {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+        }
+
+        #idEncabezadoIndex {
+            background-image: url('img/banner1.jpg');
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        #idPieIndex {
+            background-image: url('img/banner2.jpg');
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        #idMenuIndex {
+            background-color: #333;
+            color: white;
+        }
+
+        .topnav li a:hover {
+            background-color: black;
+        }
+
+        /* Ajustes para el iframe */
+        .embed-responsive-16by9 {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            padding-top: 30px; /* Ajuste para centrar el iframe verticalmente */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .embed-responsive-16by9 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="idContenedorIndex" class="container-fluid">
+        <header id="idEncabezadoIndex">
+            <h1>Mi Pagina Web && APP</h1>
+        </header>
+        <nav id="idMenuIndex">
+            <ul class="topnav">
+                <li>
+                    <a class="active" href="paginas/Inicio.html" target="iframeContenido">Inicio</a>
+                </li>
+                <li>
+                    <a href="paginas/ejemplo1.html" target="iframeContenido">Ejemplo 1</a>
+                </li>
+                <li>
+                    <a href="paginas/listaVideos.html" target="iframeContenido">Lista</a>
+                </li>
+                <li class="right">
+                    <a href="paginas/Inicio.html" target="iframeContenido">Perfil</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" frameborder="0" name="iframeContenido" allowfullscreen></iframe>
+            </div>
+        </div>
+        <footer id="idPieIndex">
+            <p>Aquí va el pie de página</p>
+        </footer>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

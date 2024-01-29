@@ -1,0 +1,45 @@
+.topnav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.topnav li a:hover {
+  background-color: black;
+}
+
+.topnav li.right {
+  float: right;
+}
+
+/* Agrega reglas para hacer el menú responsivo */
+@media screen and (max-width: 600px) {
+  .topnav li.right,
+  .topnav li {
+      float: none;
+      text-align: left;
+  }
+
+  .topnav li {
+      width: 100%;
+  }
+
+  .topnav li a {
+      padding: 8px;
+      text-align: center;
+  }
+}
